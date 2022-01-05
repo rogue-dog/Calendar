@@ -1,0 +1,20 @@
+table,
+tr,
+td {
+  border: 1px solid black;
+  text-align: center;
+  margin-left: 4em;
+  margin-right: 4em;
+}
+.main {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.month-name-conainer {
+  display: flex;
+  justify-content: center;
+  margin: 0.7em;
+  text-emphasis: bold;
+}

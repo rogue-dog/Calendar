@@ -1,26 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import logo from "./logo.svg";
+import "./App.css";
+import Calendar from "react-calendar";
+import "../node_modules/react-calendar/src/Calendar.less";
+import { DateGenerator } from "./DateGenerator/DateGenerator";
+import { current_date } from "./constants/CurrentDate";
+import { NumberOfDaysToBeGenerated } from "./constants/NumberOfDaysToBeGenerated";
+import { DateType } from "./types/DateType";
 
+import { Week } from "./components/MonthViewCalendar/Week";
+import { MonthView } from "./components/MonthViewCalendar/MonthView";
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  var new_date: DateType = {
+    day: 30,
+    year: 2022,
+    month: 11,
+    weekday: 1,
+  };
+
+  return <MonthView />;
 }
 
 export default App;
